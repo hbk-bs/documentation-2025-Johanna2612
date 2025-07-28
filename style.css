@@ -189,13 +189,13 @@ p {
   justify-content: center;
   gap: 1.2rem;
   margin-bottom: 1.2rem;
+  flex-wrap: wrap;
 }
 
 .img-row img {
   max-width: 180px;
   width: 100%;
-  height: auto;              /* Bild bleibt proportional */
-  aspect-ratio: auto;        /* Optional, verhindert erzwungenes Seitenverhältnis */
+  height: auto;              /* Bild bleibt proportional */      /* Optional, verhindert erzwungenes Seitenverhältnis */
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(100,100,100,0.10);
   background: #fff;
@@ -208,7 +208,17 @@ p {
   box-shadow: 0 4px 24px rgba(228,139,7,0.18);
 }
 
-
+/* Responsive: Bilder untereinander auf kleinen Bildschirmen */
+@media (max-width: 500px) {
+  .img-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .img-row img {
+    max-width: 95vw;
+  }
+}
 
 
 /* Bei maximal 1000px: 2 Videos pro Reihe */
