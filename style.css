@@ -164,6 +164,13 @@ p {
 .center-text {
   text-align: center;
   margin: 1rem 0;
+  max-width: 790px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-text p {
+  text-align: justify;
 }
 
 .video-grid {
