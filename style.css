@@ -173,6 +173,32 @@ p {
   text-align: justify;
 }
 
+aside {
+  background: #ffe5c2;
+  font-style: italic;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(228,139,7,0.08);
+}
+
+aside h3 {
+  font-style: normal;
+  margin-top: 0;
+  color: #e48b07;
+}
+
+.aside-img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 220px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(228,139,7,0.12);
+  background: #fff;
+}
+
 .video-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Standard: 3 Videos pro Reihe */
