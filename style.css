@@ -1,4 +1,4 @@
-/* Grundlegende Einstellungen */
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #fdfeff;
@@ -10,12 +10,10 @@ body {
   
 }
 
-/* Hauptfarbe */
 :root {
   --main-color: #e48b07;
 }
 
-/* Header */
 header {
   background: var(--main-color);
   color: #fff;
@@ -52,7 +50,6 @@ header nav a:hover {
   color: #ffe082;
 }
 
-/* Main Content */
 main {
   max-width: 800px;
   margin: 2rem auto;
@@ -72,7 +69,6 @@ h2 {
   margin-top: 0;
 }
 
-/* Buttons */
 button, .button {
   background: var(--main-color);
   color: #fff;
@@ -101,7 +97,6 @@ button:hover, .button:hover {
   transform: translateY(-2px) scale(1.03);
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem 0 1rem 0;
@@ -112,13 +107,11 @@ footer {
   border-top: 1px solid #eee;
 }
 
-/* Verbesserte Lesbarkeit für Text */
 p {
   font-size: 1.1rem;
   margin-bottom: 1.2rem;
 }
 
-/* Responsive Design */
 @media (max-width: 900px) {
   main {
     max-width: 95vw;
@@ -201,7 +194,7 @@ aside h3 {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Standard: 3 Videos pro Reihe */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 1.5rem;
   justify-items: center;
   margin: 2rem 0;
@@ -228,23 +221,23 @@ aside h3 {
 .img-row img {
   max-width: 180px;
   width: 100%;
-  height: auto;              /* Bild bleibt proportional */      /* Optional, verhindert erzwungenes Seitenverhältnis */
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(100,100,100,0.10);
   background: #fff;
   transition: transform 0.2s;
-  object-fit: contain;      /* Bild wird nie verzerrt, sondern ggf. mit Rand angezeigt */
+  object-fit: contain;
 }
 
 .img-row.small img {
   width: 100%;
-  max-width: 90px;
-  height: auto;              /* Bild bleibt proportional */      /* Optional, verhindert erzwungenes Seitenverhältnis */
+  max-width: 95px;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(100,100,100,0.10);
   background: #fff;
   transition: transform 0.2s;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .img-row.small {
@@ -292,20 +285,20 @@ aside h3 {
   }
 }
 
-/* Größere Bilder auf großen Bildschirmen */
+
 @media (min-width: 900px) {
   .img-row.small img {
-    max-width: 140px;
+    max-width: 120px;
   }
 }
 
 @media (min-width: 1200px) {
   .img-row.small img {
-    max-width: 180px;
+    max-width: 150px;
   }
 }
 
-/* Responsive: Bilder untereinander auf kleinen Bildschirmen */
+
 @media (max-width: 500px) {
   .img-row {
     flex-direction: column;
@@ -318,14 +311,12 @@ aside h3 {
 }
 
 
-/* Bei maximal 1000px: 2 Videos pro Reihe */
 @media (max-width: 1000px) {
   .video-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Bei maximal 400px: 1 Video pro Reihe */
 @media (max-width: 400px) {
   .video-grid {
     grid-template-columns: 1fr;
