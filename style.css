@@ -124,7 +124,7 @@ p {
     padding: 1.2rem 0 0.7rem 0;
   }
   header h1 {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     letter-spacing: 1px;
   }
   header nav ul {
@@ -231,7 +231,7 @@ aside h3 {
 
 .img-row.small img {
   width: 100%;
-  max-width: 95px;
+  max-width: 100px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(100,100,100,0.10);
@@ -240,8 +240,18 @@ aside h3 {
   object-fit: contain;
 }
 
+
+
 .img-row.small {
+  display: flex;
   flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: flex-start;
+  gap: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 1rem; /* optional für Platz unter Scroll-Leiste */
+  scroll-behavior: smooth;
 }
 
 
@@ -298,17 +308,21 @@ aside h3 {
   }
 }
 
-
 @media (max-width: 500px) {
-  .img-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  .img-row.small {
+    flex-direction: row !important;
+    overflow-x: auto;
+    justify-content: flex-start;
   }
-  .img-row img {
-    max-width: 95vw;
+
+  .img-row.small img {
+    flex: 0 0 auto;
+    max-width: 95px; /* optional, je nach Größe */
   }
 }
+
+
+
 
 
 @media (max-width: 1000px) {
@@ -320,5 +334,43 @@ aside h3 {
 @media (max-width: 400px) {
   .video-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.image-marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content; /* WICHTIG: Track darf so breit sein wie nötig */
+  animation: scroll-marquee 25s linear infinite;
+}
+
+.marquee-track img {
+  max-width: 95px;
+  height: auto;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(100,100,100,0.10);
+  background: #fff;
+  object-fit: contain;
+  margin-right: 1.2rem; /* entspricht gap */
+}
+
+/* SMOOTH LOOP: Bewegung über volle Track-Länge */
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
