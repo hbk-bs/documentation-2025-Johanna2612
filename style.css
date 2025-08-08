@@ -216,7 +216,7 @@ aside h3 {
   flex-wrap: wrap;
 }
 .img-big img {
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
   height: auto;
   border-radius: 12px;
@@ -231,22 +231,21 @@ aside h3 {
   box-shadow: 0 4px 24px rgba(228,139,7,0.18);
 }
 
-@media (min-width: 900px) {
-  .img-big img {
-    max-width: 400px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .img-big img {
-    max-width: 550px;
-  }
-}
-
-/* Kleiner bei sehr kleinen Bildschirmen */
 @media (max-width: 500px) {
   .img-big img {
-    max-width: 180px;
+    max-width: 320px; 
+  }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .img-big img {
+    max-width: 300px; 
+  }
+}
+
+@media (min-width: 701px) {
+  .img-big img {
+    max-width: 550px; 
   }
 }
 
@@ -292,7 +291,7 @@ aside h3 {
   gap: 1rem;
   max-width: 100%;
   box-sizing: border-box;
-  padding-bottom: 1rem; /* optional für Platz unter Scroll-Leiste */
+  padding-bottom: 1rem; 
   scroll-behavior: smooth;
 }
 
@@ -359,7 +358,7 @@ aside h3 {
 
   .img-row.small img {
     flex: 0 0 auto;
-    max-width: 95px; /* optional, je nach Größe */
+    max-width: 95px; 
   }
 }
 
@@ -392,7 +391,7 @@ aside h3 {
 
 .marquee-track {
   display: flex;
-  width: max-content; /* WICHTIG: Track darf so breit sein wie nötig */
+  width: max-content; 
   animation: scroll-marquee 25s linear infinite;
 }
 
@@ -404,10 +403,10 @@ aside h3 {
   box-shadow: 0 2px 12px rgba(100,100,100,0.10);
   background: #fff;
   object-fit: contain;
-  margin-right: 1.2rem; /* entspricht gap */
+  margin-right: 1.2rem; 
 }
 
-/* SMOOTH LOOP: Bewegung über volle Track-Länge */
+
 @keyframes scroll-marquee {
   0% {
     transform: translateX(0);
