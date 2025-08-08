@@ -216,7 +216,7 @@ aside h3 {
   flex-wrap: wrap;
 }
 .img-big img {
-  max-width: 70%;
+  max-width: 200px;
   width: 100%;
   height: auto;
   border-radius: 12px;
@@ -230,6 +230,27 @@ aside h3 {
   transform: scale(1.05) rotate(-2deg);
   box-shadow: 0 4px 24px rgba(228,139,7,0.18);
 }
+
+@media (min-width: 900px) {
+  .img-big img {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-big img {
+    max-width: 550px;
+  }
+}
+
+/* Kleiner bei sehr kleinen Bildschirmen */
+@media (max-width: 500px) {
+  .img-big img {
+    max-width: 180px;
+  }
+}
+
+
 
 .img-row {
   display: flex;
