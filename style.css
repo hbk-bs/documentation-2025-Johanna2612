@@ -192,21 +192,7 @@ aside h3 {
   background: #fff;
 }
 
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 1.5rem;
-  justify-items: center;
-  margin: 2rem 0;
-}
 
-.video-grid video {
-  width: 100%;
-  max-width: 77%;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(100,100,100,0.07);
-  background: #000;
-}
 
 .img-big {
   display: flex;
@@ -364,7 +350,21 @@ aside h3 {
 
 
 
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem;
+  justify-items: center;
+  margin: 2rem 0;
+}
 
+.video-grid video {
+  width: 100%;
+  max-width: 77%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(100,100,100,0.07);
+  background: #000;
+}
 
 @media (max-width: 1000px) {
   .video-grid {
