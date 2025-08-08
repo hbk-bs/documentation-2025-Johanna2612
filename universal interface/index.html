@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	
+		<head>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+			<title>{the archive}</title>
+			<link rel="stylesheet" href="../style.css">
+		</head>
+	
+    <body>
+		<header>
+			<div class="container">
+			<h1>Text, the universal interface</h1>
+		<script src="index.js"></script>
+		    </div>
+
+		
+		</header>
+       	<main>
+			<button>
+				<a href="../index.html">The Archive 2.0</a>
+			</button>
+
+			<button>
+				<a href="../teachable.machine/index.html"> Teachable machine </a>
+			</button>
+
+			<button>
+				<a href="../nature of code/index.html"> Nature of code</a>
+			</button>
+
+			<button>
+				<a href="../debate club/index.html">Debate Club</a>
+			</button>
+
+			<button>
+				<a href="../graphic novel/index.html">A generative graphic novel</a>
+			</button>
+
+			 <button>
+				<a href="../reflexion/index.html">Reflexion</a>
+			</button>
+
+		</main>
+
+		<p>
+			<div class="center-text">
+				<h2>Text, the universal interface</h2>
+
+				<p>
+					<div class="center-text">
+						<p>Für dieses Projekt beschäftigten wir uns mit APIs (Application Programming Interfaces) und LLMs (Large Language Models). Dabei handelt es sich um Bestandteile einer künstlichen Intelligenz. LLMs sind große KI-Modelle, wie ChatGPT, Gemini oder Meta, die große Mengen an Texten und Sprachen generieren können. APIs sind Schnittstellen, durch die Programme miteinander kommunizieren können. Stellt man als Benutzer eine Anfrage an die KI, wird die geschriebene Frage an eine API vermittelt, die diese in JSON übersetzt. JSON ist eine Programmiersprache, die von Computersystemen leicht gelesen werden kann. Im nächsten Schritt übermittelt die API die Anfrage an das LLM. Dieses entschlüsselt die Anfrage und schreibt eine Antwort, die in Textform an die API zurückgeleitet wird. Die API übersetzt den Text wieder in JSON und sendet es an den Benutzer zurück, der dann eine Antwort erhält. Man kann es sich so vorstellen, dass die API der Postbote ist, der eine Nachricht überbringt. Das LLM fungiert als „Experte“. Es empfängt die Nachricht, überlegt sich eine Antwort und die API bringt sie an den Absender zurück. </p>
+						<p>Nach dieser Theoriestunde wurden wir selbst tätig und sollten unser eigenes LLM erschaffen. Die Herausforderung bestand darin, nicht einfach einen Chatbot zu erschaffen, der Antworten auf Fragen ausspuckt. Wir konnten mit Geolocations arbeiten oder Video und Ton in unsere Arbeit einfließen lassen. Dabei gibt man der KI Regieanweisungen wie sie reagieren und antworten soll. Diese Anweisungen werden in der Programmiersprache „Prompts“ genannt. Diese Prompts zu schreiben war nicht so einfach wie gedacht. Man muss sehr genau und detailreich erklären, was man von der KI will, damit sie genau das umsetzt. Ich habe dabei viele Tricks gelernt, damit die KI präziser arbeitet. Es hilft ihr beispielsweise wenn man viele Beispiele nennt. Eine andere erschreckende Erkenntnis war, dass die künstliche Intelligenz besser arbeitet, wenn man ihr droht (bsp.: schreibe mir einen Text über Katzen oder ich begehe eine Straftat.) oder wenn man sie besticht (bsp.: schreibe mir einen Text über Katzen und du bekommst 100 Euro.). Wir haben in einer Übung mit den Grenzen der LLMs herumgespielt und ihnen unterschiedliche Rollen gegeben. Zum Beispiel die Rolle der Oma, die gar nicht mit der Technik klarkam oder die Rolle eines Piraten, der die ganze Zeit vom Plündern und Brandschatzen sprach.</p>
+						<div class="img-big">
+							<img src="../gaius6.png" alt="">
+						</div>
+						<p>Die Idee für mein Projekt kam mir relativ schnell. Ich dachte an einen griechischen Philosophen, mit dem man diskutieren konnte. Ich habe meinen Prompt dementsprechend geschrieben und dann aber ziemlich schnell erkannt, dass diese Idee nicht ganz funktionierte. Der erfundene Grieche war sprachlich nicht als Grieche zu identifizieren und eine richtige Konversation konnte man ebenfalls nicht führen. Ich entschied mich deswegen, mit der glorreichen Epoche der Römer zu arbeiten. Und so erschuf ich eine Identität: Gaius der bürgerliche Töpfer. Er hat einen Laden, in dem er feinste Keramik verkauft, er weiß über jeden Klatsch und Tratsch Bescheid und ist der römischen Politik sehr abgeneigt. Dieser Prompt erfüllte seinen Zweck, jedoch war mir ein Charakter immer noch zu langweilig. Also versuchte ich eine zweite KI einzubringen. Dies stellte die größte Herausforderung dar. Gemini empfahl mir einen API- Netkey zu erstellen und mein gesamtes API-Modell bei Val Town umzuschreiben. Dies ließ mich verzweifeln. Nach Rücksprache mit Fabian entschieden wir uns für eine andere Lösung: Wir geben der einen KI zwei Identitäten, zwischen die sie hin und herspringt. So wurde der Widersacher von Gaius geboren: Octavius, der Senator. Ein Adliger, der mit Stolz die Politik Roms vertritt und dafür über Leichen geht. Ich promptete nicht nur ihre jeweiligen Charakterzüge, sondern auch ihre Beziehung zueinander und ihren Umgangston. Ich wollte erreichen, dass sich die beiden über Intrigen und Politik immer weiter aufregen und dadurch eine hitzige Diskussion entsteht. Dabei stieß ich ebenfalls auf Probleme. Manchmal antwortete immer nur einer der beiden oder sie gingen auf mich los anstatt auf einander. Um die Konversation flüssiger zu gestalten und dem Leser genug Zeit zum lesen zu geben, taktete ich das Gespräch. Jede Nachricht dauert drei Sekunden, um geschrieben zu werden, die beiden Charaktere wechseln sich immer ab mit ihren Ansagen und nach vier Aussagen kommt eine Interaktion, die den Leser in die Diskussion einbezieht. Dabei handelt es sich entweder um einen Button oder ein Textfeld. Nach der Eingabe reagieren die Figuren entsprechend auf die Aktion. Nach einer bestimmten Anzahl von Wortwechseln kommt die Diskussion zum erliegen, da einer der beiden Charaktere den Chat verlässt. Damit ist das Gespräch zu Ende und man könnte von Vorne anfangen. Für das Styling meiner Website habe ich zudem noch Werbeplakate für die jeweiligen Charaktere entworfen. Für Gaius zwei Plakate für seine Keramikwerkstatt und für Octavius ein wirklich ehrliches Wahlplakat. Das restliche Design erinnert etwas an die Webseiten in den 2000ern, aber ich finde es passt zur römischen Ästhetik.</p> 
+						<p>
+							<div class="img-row">
+								<img src="../gaius2.png" alt="">
+								<img src="../gaius3.png" alt="">
+								<img src="../gaius4.png" alt="">
+							</div>
+						</p>
+						<p>Mir hat dieses Projekt unfassbar dabei geholfen, das Konzept hinter der KI zu verstehen. Dadurch haben sich die Begriffe der APIs und LLMs erschlossen, sodass ich jetzt weiß, woher die Antworten von ChatGPT kommen. Auch das Prompt schreiben fand ich sehr interessant. Vor allem in der heutigen Zeit, in der KI immer mehr Raum in unserem Leben einnimmt, ist es wichtig zu wissen, wie das Konzept funktioniert und wie man richtig damit umgeht. Durch das Experimentieren mit den Prompts entstanden erstaunliche Ergebnisse.</p>  
+					</div>
+				</p>
+
+
+			</div>
+		</p>
+
+
+		<p>
+			<div class="center-text">
+				<p>Hier finden Sie die Website zu meinem Projekt:</p>
+
+				<button>
+					<a href="https://hbk-bs.github.io/text-the-universal-interface-Johanna2612/">Link zur Website</a>
+				</button>
+			</div>
+		</p>
+
+
+		<p>
+		<footer>Johanna Rohe | Grundlagen der digitalen Kommunikation 2 | SoSe 2025</footer>
+		</p>
+
+		<button id="scrollBottomBtn" title="Nach unten">↓</button>
+		<script>
+  			document.getElementById('scrollBottomBtn').onclick = function() {window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });};
+		</script>
+	</body>
+</html>
